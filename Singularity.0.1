@@ -23,7 +23,8 @@ From: continuumio/miniconda3
     apt-get update
     apt-get -y install build-essential gfortran file
     
-    # install R
+    # install R and some extra packages
+    conda install --yes -c conda-forge eigen
     conda install --yes -c conda-forge pandoc
     conda install --yes -c conda-forge r-base==3.5.1 
 
